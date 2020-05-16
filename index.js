@@ -1,9 +1,9 @@
 const server = require('./src/server');
-const {MONGO_URI,APPLICACTION_NAME} = require('./src/config');
+const {MONGODB_URI,APPLICACTION_NAME} = require('./src/config');
 const mongoose = require('mongoose');
 
 mongoose.connect(
-    MONGO_URI,
+    MONGODB_URI,
     {useCreateIndex:true,useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false},
     (err)=>{
         if(err)throw err;
