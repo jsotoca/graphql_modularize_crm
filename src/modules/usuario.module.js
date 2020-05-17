@@ -13,6 +13,10 @@ const typeDefs = gql`
     type Token{
         token:String
     }
+    type Usuario{
+        nombre:String
+        email:String
+    }
     input SignUpInput{
         nombre:String!
         email:String!

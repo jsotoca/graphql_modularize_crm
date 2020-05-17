@@ -7,5 +7,7 @@ const productoSchema = new Schema({
     status:{type:Boolean,default:true},
 },{timestamps:true});
 
+productoSchema.index({nombre:'text'});
+
 module.exports = model('producto',productoSchema);
 
